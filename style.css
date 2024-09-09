@@ -1,0 +1,58 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+    position: relative;
+  }
+  
+  #rabbit {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/rabbit.png);
+    background-size: 50px 50px;
+    position: absolute;
+    top: 150px;
+  }
+  
+  #grass {
+    width: 20px;
+    height: 40px;
+    background-image: url(img/grass.png);
+    position: absolute;
+    left: 580px;
+    animation: grassMov 1s infinite linear;
+  }
+  
+  #score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+  }
+  
+  @keyframes grassMov {
+    0% {
+      left: 580px;
+    }
+    100% {
+      left: -20px;
+    }
+  }
+  
+  .jump {
+    animation: jump 0.5s linear;
+  }
+  
+  @keyframes jump {
+    0% {
+      top: 150px;
+    }
+    50% {
+      top: 80px;
+    }
+    100% {
+      top: 150px;
+    }
+  }
+  
